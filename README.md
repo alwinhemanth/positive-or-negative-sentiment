@@ -1,38 +1,44 @@
-# Sentiment Analysis: Positive or Negative
+# Sentiment Analysis on Amazon Customer Reviews
 
-This project uses Natural Language Processing (NLP) and machine learning to classify text data into **positive** or **negative** sentiment categories. It demonstrates data preprocessing, feature extraction, model training, evaluation, and performance comparison.
+This project performs **sentiment analysis** on Amazon customer reviews using Natural Language Processing (NLP) and machine learning techniques. It classifies the reviews into **positive** or **negative** sentiment based on review text and ratings.
 
-## 📁 Project Structure
+## 🗂️ Dataset
 
-- `sentiment.ipynb` – Main Jupyter notebook containing the full analysis.
-- `README.md` – Project overview and instructions.
+- The data consists of **Amazon product reviews**.
+- Reviews include both **textual feedback** and **ratings (1–5 stars)**.
+- Ratings are used to label sentiment:
+  - **1–2 stars** → Negative
+  - **4–5 stars** → Positive
+  - **3 stars** may be ignored or labeled as neutral (if used).
 
 ## 🧠 Models Used
 
-The following models are implemented and compared:
+The following ML classifiers were trained and compared:
 
-- Support Vector Machine (SVM)
-- Logistic Regression
-- Naive Bayes
-- Decision Tree
+- **Support Vector Machine (SVM)**
+- **Logistic Regression**
+- **Naive Bayes**
+- **Decision Tree**
+
+## ⚙️ Techniques & Tools
+
+- Text preprocessing with **NLTK**
+- **TF-IDF** vectorization
+- Sentiment labeling from star ratings
+- Training multiple models
+- **F1 Score**, Accuracy, Precision, Recall for evaluation
 
 ## 📊 Evaluation Metrics
 
-The models are evaluated using:
+Each model is evaluated using:
 
-- **Accuracy**
-- **Precision**
-- **Recall**
-- **F1 Score**
+- **F1 Score per class**
+- Accuracy
+- Precision
+- Recall
 
-## 📌 Key Features
+## 📁 Files in This Repo
 
-- Text preprocessing (tokenization, stopword removal, etc.)
-- TF-IDF vectorization
-- Training multiple classifiers
-- Model performance comparison
-- F1 score analysis for each sentiment class
-
-## 🚀 Getting Started
-
+- `sentiment.ipynb` – Main Jupyter notebook with complete code
+- `README.md` – Project overview
 
